@@ -49,19 +49,15 @@ const urlParams = new URLSearchParams(queryString);
 function coffeeTemplate(coffee){
 
 
-
-      return `
+return `
 
 <p>
 
            <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
 
           <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day} daily coffee special is <strong class="feature">${coffee.name}</strong>,${coffee.desc} </p>
-
-
+          
 `;
-
-
 
 }
 
@@ -156,4 +152,3 @@ document.querySelector("html").style.backgroundColor = coffee.color;
 
 
        console.log(coffee);
-
